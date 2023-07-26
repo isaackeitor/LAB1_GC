@@ -34,3 +34,6 @@
 # Denis
 build/
 src/main
+
+# Mac
+.DS_Store
