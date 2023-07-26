@@ -31,13 +31,9 @@ int main() {
     const Color white(255, 255, 255);
     const Color yellow(255, 255, 0);
     const Color blue(0, 0, 255);
+    const Color red(255, 0, 0);
   
-    std::vector<Vertex2> polygonVertices2 = {
-        Vertex2(321, 335),
-        Vertex2(288, 286),
-        Vertex2(339, 251),
-        Vertex2(374, 302)
-    };
+    
     
     std::vector<Vertex2> polygonVertices1 = {
         Vertex2(165, 380),
@@ -51,7 +47,20 @@ int main() {
         Vertex2(205, 410),
         Vertex2(193, 383)
     };
-
+  
+    std::vector<Vertex2> polygonVertices2 = {
+        Vertex2(321, 335),
+        Vertex2(288, 286),
+        Vertex2(339, 251),
+        Vertex2(374, 302)
+    };
+  
+    std::vector<Vertex2> polygonVertices3 = {
+        Vertex2(377, 249),
+        Vertex2(411, 197),
+        Vertex2(436, 249)
+    };
+  
     // Set the dimensions of the frame buffer (i.e., the size of the image).
     const int width = 800;
     const int height = 600;
@@ -60,9 +69,9 @@ int main() {
     clear(Color(0, 0, 0));
 
     // Draw the polygon.
-    drawPolygon(polygonVertices2, blue, white, width);
     drawPolygon(polygonVertices1, yellow, white, width);
-
+    drawPolygon(polygonVertices2, blue, white, width);
+    drawPolygon(polygonVertices3, red, white, width);
 
     return 0;
 }
