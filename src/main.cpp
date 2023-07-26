@@ -31,7 +31,7 @@ int main() {
     const Color white(255, 255, 255);
     const Color red(255, 0, 0);
 
-    std::vector<Vertex2> polygonVertices = {
+    std::vector<Vertex2> polygonVertices3 = {
         Vertex2(377, 249),
         Vertex2(411, 197),
         Vertex2(436, 249)
@@ -44,7 +44,7 @@ int main() {
     clear(Color(0, 0, 0));
 
     // Draw the polygon.
-    drawPolygon(polygonVertices, red, white, width);
+    drawPolygon(polygonVertices3, red, white, width);
 
 
     return 0;
