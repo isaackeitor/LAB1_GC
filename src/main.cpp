@@ -29,14 +29,29 @@ void drawPolygon(const std::vector<Vertex2>& vertices, const Color& fillColor, c
 
 int main() {
     const Color white(255, 255, 255);
+    const Color yellow(255, 255, 0);
     const Color blue(0, 0, 255);
-
+  
     std::vector<Vertex2> polygonVertices2 = {
         Vertex2(321, 335),
         Vertex2(288, 286),
         Vertex2(339, 251),
         Vertex2(374, 302)
     };
+    
+    std::vector<Vertex2> polygonVertices1 = {
+        Vertex2(165, 380),
+        Vertex2(185, 360),
+        Vertex2(180, 330),
+        Vertex2(207, 345),
+        Vertex2(233, 330),
+        Vertex2(230, 360),
+        Vertex2(250, 380),
+        Vertex2(220, 385),
+        Vertex2(205, 410),
+        Vertex2(193, 383)
+    };
+
     // Set the dimensions of the frame buffer (i.e., the size of the image).
     const int width = 800;
     const int height = 600;
@@ -46,6 +61,7 @@ int main() {
 
     // Draw the polygon.
     drawPolygon(polygonVertices2, blue, white, width);
+    drawPolygon(polygonVertices1, yellow, white, width);
 
 
     return 0;
